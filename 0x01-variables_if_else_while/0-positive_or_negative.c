@@ -9,6 +9,7 @@
  * Description: Positive or negative
  *
  * Return : 0 (Success)
+ *
  */
 int main(void)
 {
@@ -24,5 +25,6 @@ int main(void)
 	else 
 		printf("%i is negative\n", n);
 
+	/* Print THe negitive or positive */
 	return (0);
 }
