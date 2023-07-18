@@ -12,13 +12,18 @@ void times_table(void)
 	for (line = 0; line <= 9; line++)
 	{
 		for (mult = 0; mult <= 9; mult++)
+		{
 			mult = mult * line;
-		if (mult <= 9)
-			_putchar(mult + 48);
-		_putchar((mult / 10) + 48);
-		_putchar((mult % 10) + 48);
-		_putchar(',');
-		_putchar(' ');
+			if (mult <= 9)
+				_putchar(mult + 48);
+			else
+			{
+				_putchar((mult / 10) + 48);
+				_putchar((mult % 10) + 48);
+			}
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 	_putchar('\n');
 }
