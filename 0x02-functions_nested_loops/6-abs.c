@@ -6,10 +6,10 @@
  *
  * @n: check input of function
  *
- * Return: 1 if c is lowercase
+ * Return: n if c is lowercase
 */
 
-int _abs(int n);
+int _abs(int n)
 {
 	if (n < 0)
 		n = n * (-1);
