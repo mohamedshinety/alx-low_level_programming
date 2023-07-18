@@ -16,9 +16,9 @@ void times_table(void)
 			res = mult * line;
 			if (res <= 9)
 				_putchar(res + 48);
-			_putchar(',');
-                        _putchar(' ');
-			_putchar(' ');
+				_putchar(',');
+                        	_putchar(' ');
+				_putchar(' ');
 			else
 			{
 				_putchar((res / 10) + 48);
