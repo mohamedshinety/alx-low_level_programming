@@ -23,13 +23,11 @@ void times_table(void)
 			{
 				_putchar(' ');
 			}
-			else
-			
+			else		
 				_putchar((res / 10) + 48);
 
 			_putchar((res % 10) + 48);
-			
-		}
+			}
 		_putchar('\n');
 	}
 }
