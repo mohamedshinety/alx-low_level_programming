@@ -3,6 +3,10 @@
 /**
  * _islower - utilized on the _putchar function to print
  * The alphabet a - z
+ *
+ * @c: check input of function
+ *
+ * Return: 1 if c is lowercase
 */
 
 int _islower(int c)
