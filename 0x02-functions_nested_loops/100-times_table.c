@@ -29,16 +29,18 @@ void print_times_table(int n)
 				}
 				else if (res < 100)
 				{
-					_putchar((res / 10) + 48);
-					_putchar((res % 10) + 48);
+					_putchar(' ');
 				}
 				else if (res > 100)
 				{
 					_putchar((res / 100) + 48);
-					_putchar((res % 100) + 48);
+					_putchar((res % 10) % 10 + 48);
 				}
-				else
+				else if (res < 100 && res > 9)
+				{
 					_putchar((res / 10) + 48);
+					_putchar((res % 10) + 48);
+				}
 			}
 			_putchar('\n');
 		}
