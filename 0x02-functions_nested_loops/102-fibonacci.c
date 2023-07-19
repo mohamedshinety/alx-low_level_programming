@@ -10,11 +10,21 @@
 
 int main(void)
 {
-	int num, sum;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (num = 0; num < 1024; num++)
-		if ((num % 3 == 0) || (num % 5 == 0))
-			sum += num;
-	printf("%d\n", sum);
+	for (count = 0; count < 50; count++)
+	{
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+
+		fib1 = fib2;
+		fib2 = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
+	}
 	return (0);
 }
