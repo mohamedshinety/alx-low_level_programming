@@ -19,6 +19,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	digit = n % 10;
 
-	printf (digit);
+	printf(digit);
+
 	return (0);
 }
