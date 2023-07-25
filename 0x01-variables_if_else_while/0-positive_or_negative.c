@@ -2,15 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
-
 /**
- * main -Entry point
- *
- * Description: false or true validation
- *
- * Return : 0 (Success)
- *
- */
+* main - Entry point
+*
+* Description: 'the program's description'
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
 	int n;
@@ -22,9 +21,8 @@ int main(void)
 		printf("%i is positive\n", n);
 	else if (n == 0)
 		printf("%i is zero\n", n);
-	else 
+	else
 		printf("%i is negative\n", n);
 
-	/* Print THe negitive or positive */
 	return (0);
 }
